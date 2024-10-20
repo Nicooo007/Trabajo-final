@@ -44,12 +44,26 @@ body {
     border-radius: 5px;
   }
   
-  .user-cart a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #ed5a87;
+
+  .user-cart {
+    display: flex;
+    justify-content: space-between;
   }
   
+  .user-cart a {
+    margin-left: 20px; /* Separa el usuario del carrito */
+    text-decoration: none;
+    color: #ed5a87; 
+  }
+  
+  .user-cart a:last-child {
+    margin-left: auto; /* Empuja el carrito al extremo derecho */
+  }
+   
+  .cart {
+    margin-right: 20px; /* Ajusta este valor según cuánto espacio quieras del borde derecho */
+  }
+
   /* Barra de categorías */
   .categories {
     background-color: #fff;
